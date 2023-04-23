@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+
+<h1>IMC</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>"); 
+        document.write("<hr>"); 
+        document.write("<br>");
+        document.write("<br>");  
+    }  
+
+    function imprimir(frase) {
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura) {
+
+        return (peso / (altura * altura));
+        
+    }
+
+    nombreUsuario = prompt("informe su nombre")
+    pesoInformado = prompt(nombreUsuario + ", informe su peso");
+    alturaInformada = prompt(nombreUsuario + ", informe su altura");
+
+    imcCalculado = calcularImc(pesoInformado,alturaInformada)
+
+    imprimir("el imc calculado de " + nombreUsuario + " es: " + imcCalculado);
+
+    if (imcCalculado < 18.5) {
+        imprimir(nombreUsuario + " está por debajo del peso normal");
+    }
+
+    if (imcCalculado >= 18.5) {
+        if (imcCalculado < 25) {
+        imprimir(nombreUsuario + " está en el peso normal");
+        }
+    }
+
+    if (imcCalculado >= 25) {
+        if (imcCalculado < 30) {
+        imprimir(nombreUsuario + "  tiene sobrepeso");
+        }
+    }
+
+    if (imcCalculado >=30) {
+        imprimir(nombreUsuario + " está obeso/a");
+    }
+
+</script>
+
+<br>
+<br>
+
+<h1>HELLO WORLD<h1>
