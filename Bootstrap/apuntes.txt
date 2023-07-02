@@ -1,0 +1,91 @@
+BOOTSTRAP
+
+https://getbootstrap.com
+
+- Grid
+- Componentes
+- Íconos
+
+------------------------------------------------------------------------------------------------
+
+CLASES PARA GRID (1 Fila, 12 Columnas)
+
+.row (fila)
+.col- (columna)
+
+<div class="container">
+    <div class="row">  
+        <div class="col"></div> 
+        <div class="col"></div>
+    </div>
+</div>
+
+El "container" contiene x filas y la fila contiene x columnas (max 12).
+
+- Es importante importar todo por medio de CDN en el head de nuestro index.
+- Los inconos también se importan por medio de CDN y lucen así: <i class="bi bi-apple"></i>
+
+- La clase "container" se ajusta solo al responsive, pero NO ocupa el 100% del ancho de la pantalla.
+- La clase "container-fluid" se ajusta solo al responsive, pero SI ocupa el 100% del ancho de la pantalla.
+- La clase "text-center" centra el texto sin necesidad de especificarlo en CSS.
+- Se puede trabajar con Bootstrap y CSS a la vez. Ej: <div class="container miclase">
+
+------------------------------------------------------------------------------------------------
+
+Dimensions Responsive :
+
+.col-xs- (columna extra small: <576px) 
+.col-sm- (columna small: >=576px)
+.col-md- (columna medium: >=768px)
+.col-lg- (columna large: >=992px)
+.col-xl- (columna extra large: >=1200px)
+.col-xxl- (columna extra extra large: >=1400px)
+
+- Se puede definir la cantidad de columnas que ocupan dos o más <div> pero siempre deben dar como resultado 12.
+- Se puede ajustar la cantidad de columnas que ocupan dos o más <div> dependiendo el tamaño de la pantalla.
+  Ej: <div class="col-sm-4 col.lg-6 miclase"></div> 
+      <div class="col-sm-8 col.lg-6 miclase"></div>
+  Hasta Small van a ocupar 4 y 6, pero al llegar a Large van a ocupar 6 y 6.
+
+- Se aplica el mismo tamaño para los contenedores, eso si, si el ancho de la pantalla es superior al ancho
+  del container establecido, este ya no ocupará el 100% (como el "container-fluid") sino que pasará a ser "container" normal.
+
+.container-sm
+.container-md
+.container-lg
+.container-xl
+.container-xxl
+
+------------------------------------------------------------------------------------------------
+
+Flexbox
+
+- La clase "d-flex" permite que un contenedor adquiera las propiedades flex de manera automática y sin CSS.
+- flex-direction --> Dirección en la que se alinean los elementos: row, row-reverse, column, column-reverse.
+
+- justify-content --> Distribución de los elementos en el eje principal: flex-start, flex-end, center, space-between, space-around, space-evenly.
+    Equivalente en Bootstrap:
+        .justify-content-start
+        .justify-content-end
+        .justify-content-center
+        .justify-content-between
+        .justify-content-around
+        .justify-content-evenly
+
+- align-items --> Distribución de elementos en el eje secundario: flex-start, flex-end, center, baseline, stretch.
+    Equivalente en Bootstrap:
+        .align-items-start
+        .align-items-end
+        .align-items-center
+        .align-items-baseline
+        .align-items-stretch
+
+- flex-wrap --> Redistribuir los elementos en varias líneas.
+    flex-wrap: nowrap --> se mantienen en la misma línea.
+    flex-wrap: wrap --> se ajustan en diferentes líneas (dependiendo el tamaño).
+        Equivalente en Bootstrap:
+            .flex-nowrap
+            .flex-wrap
+            .flex-wrap-reverse
+
+- Todas estas propiedades se pueden aplicar SIN la necesidad de CSS.
