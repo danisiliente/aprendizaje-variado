@@ -29,6 +29,7 @@ El "container" contiene x filas y la fila contiene x columnas (max 12).
 - La clase "container-fluid" se ajusta solo al responsive, pero SI ocupa el 100% del ancho de la pantalla.
 - La clase "text-center" centra el texto sin necesidad de especificarlo en CSS.
 - Se puede trabajar con Bootstrap y CSS a la vez. Ej: <div class="container miclase">
+- La clase "rounded-circle" nos permite redondear una foto, equivale a un border radius del 50%.
 
 ------------------------------------------------------------------------------------------------
 
