@@ -11,7 +11,7 @@
         <link href="./css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <title>Bootstrap</title>
     </head>
     <body>
@@ -27,16 +27,16 @@
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonios</a>
+                    <a class="nav-link" href="#testimonios">Testimonios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -57,7 +57,7 @@
         </section>
 
         <!-- Sobre mi -->
-        <section class="sobre-mi seccion-oscura">
+        <section id="sobre-mi" class="sobre-mi seccion-oscura">
           <div class="contenedor">
             <h2 class="seccion-titulo texto-blanco">Conoce a Daniel</h2>
             <p>Hola, soy Daniel, actualmente me encuentro estudiando análisis y desarrollo de software. Me apasiona el mundo digital y la tecnología, encuentro un inmenso interés en el constante avance, crecimiento y desarrollo de las TIC's. Mi pasión por este campo me motiva a buscar constantemente oportunidades para aprender y ampliar mis conocimientos. Estoy emocionado por formar parte de la vanguardia de la transformación digital y contribuir al desarrollo de soluciones innovadoras que impacten positivamente en la sociedad.</p>
@@ -110,7 +110,7 @@
         </section>
 
         <!-- Proyectos recientes -->
-        <section class="proyectos-recientes seccion-clara d-flex flex-colum">
+        <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-colum">
           <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
           <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente.</h3>
           <!-- Galeria de proyectos -->
@@ -203,6 +203,117 @@
             </button>
           </a>
         </section>
+
+        <!-- Artículos -->
+        <section class="articulos justify-content-start">
+          <h2 class="seccion-titulo texto-negro">Artículos</h2>
+          <div class="card">
+            <div class="card-header">
+              Más recientes
+            </div>
+            <ul class="list-group list-group-flush">
+              <a href="" target="_blank" rel="noopener noreferrer"><li class="list-group-item">Artículo 1</li></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><li class="list-group-item">Artículo 2</li></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><li class="list-group-item">Artículo 3</li></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><li class="list-group-item">Artículo 4</li></a>
+              <a href="" target="_blank" rel="noopener noreferrer"><li class="list-group-item">Artículo 5</li></a>
+            </ul>
+          </div>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+              Ver más artículos
+              <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </a>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonios" class="testimonios seccion-clara">
+          <h2 class="seccion-titulo">Testimonios</h2>
+          <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+          <!-- Carrusel -->
+          <div id="testimonios-carrusel" class="carousel slide carousel-dark">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="./img/p6.jpg" alt="Cliente 1">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perspiciatis voluptatum libero esse? Itaque.</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Matew</p>
+                    <p class="cargo">Scrum Master</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="./img/p6.jpg" alt="Cliente 2">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perspiciatis voluptatum libero esse? Itaque.</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Gina</p>
+                    <p class="cargo">UI Design</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <img class="testimonio-imagen rounded-circle" src="./img/p6.jpg" alt="Cliente 3">
+                  <p class="testimonio-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore perspiciatis voluptatum libero esse? Itaque.</p>
+                  <div class="testimonio-info">
+                    <p class="cliente">Max</p>
+                    <p class="cargo">Embajador Adidas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contacto seccion-oscura">
+          <div class="container">
+            <div class="container rectangulo text-center d-flex justify-content-evenly">
+              <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                  ¡Hablemos!
+                </div>
+                <div class="col-12 col-md-4 descripcion">
+                  Contáctame para iniciar tu proyecto de desarrollo web.
+                </div>
+                <div class="col-12 col-md-4">
+                  <a href="mailto:messi@messi.com">
+                    <button type="button">
+                      Contacto
+                      <i class="bi bi-envelope-check-fill"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+          <img class="footer-logo" src="./img/icon.png" alt="Logo del protafolio">
+          <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:messi@messi.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+          </div>
+          <div class="derechos-de-autor">
+            Creado por Daniel Motta (2023) &#169;
+          </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </body>
